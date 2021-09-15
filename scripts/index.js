@@ -63,7 +63,7 @@ const clearFoodAndDrink = async () => {
 (async () => {
     try {
         console.log('creating connection')
-        const connectionRes = await mongoose.connect(uri, { replicaSet: 'rs0' });
+        const connectionRes = await mongoose.connect(uri);
 
         // If collection does not exist then it is required to call createCollection() when working with replica sets.
        // await drinkSchema.createCollection();
@@ -72,10 +72,10 @@ const clearFoodAndDrink = async () => {
        console.log(`Database state before`)
        await readFoodAndDrink();
 
-       await clearFoodAndDrink();
+       //await clearFoodAndDrink();
        await saveFoodAndDrink();
 
-        //await saveFoodAndDrinkWithRollback();
+       // await saveFoodAndDrinkWithRollback();
 
         console.log(`Database state after`)
         await readFoodAndDrink();
