@@ -77,6 +77,7 @@ $ mongo "mongodb://<MONGO_INITDB_ROOT_USERNAME>:<MONGO_INITDB_ROOT_PASSWORD>@loc
 ## Configuration for .env file in backend and tx-processor
 
 <p>
+
 ```
 DOCUMENTDB_USER=root
 DOCUMENTDB_PASSWORD=rootpassword
@@ -84,4 +85,5 @@ DOCUMENTDB_HOST=localhost:30001,localhost:30002,localhost
 DOCUMENTDB_PORT=30003
 DOCUMENTDB_DB=nft-marketplace
 ```
+
 </p>
